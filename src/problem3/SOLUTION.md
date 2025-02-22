@@ -1,0 +1,4 @@
+Provide your solution here:
+- First rule of action is always prepared for backup ,this VM is 99% memory consumption - which I assume the end-user will be impacted on performance - I'll try to mitigate this from production workload as soon as possible with the backup (if this was doable on this scenario).
+- Next , I will try to login to the VM , check for process ram consumption in htop , check for log located in the config nginx , since the VM only purpose was an nginx loadbalancer , it will redirect request to elsewhere , this could be a DDOS attack or wrong worker child process logic, if something else suspicious running in the background it could be that this VM has been compromised.
+- Based on the information I have collected from second step , I could determine on the next step to handle the problem accordingly. 
